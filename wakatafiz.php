@@ -72,7 +72,12 @@ class WakataFiz {
     }
 
     public function settings() {
-        add_settings_section('wfiz_first_section', null, null, 'wfiz-word-count-settings-page');
+        add_settings_section(
+            'wfiz_first_section', 
+            null, 
+            null, 
+            'wfiz-word-count-settings-page'
+        );
         
         // Location Field
         add_settings_field('wfiz_location', 'Display Location', array($this, 'locationHTML'), 'wfiz-word-count-settings-page', 'wfiz_first_section');
