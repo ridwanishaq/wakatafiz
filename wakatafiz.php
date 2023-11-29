@@ -1,13 +1,19 @@
 <?php
 
 /**
- * Plugin Name: WakataFiz
- * Description: A word count plugin for single post statistics.
- * Version: 1.0
- * Author: Rilwanu
- * Author URI: https://github.com/ridwanishaq
- * Text Domain: wakatafizdomain
- * Domain Path: /languages
+ * Plugin Name:         WakataFiz
+ * Plugin URI:          https://github.com/ridwanishaq/wakatafiz
+ * Description:         A word count plugin for single post statistics.
+ * Version:             1.0
+ * Requires at least:   5.3.1
+ * Requires PHP:        7.4
+ * License:             GPL v2 or later
+ * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
+ * Update URI:          https://github.com/ridwanishaq/wakatafiz
+ * Author:              Rilwanu Isyaku
+ * Author URI:          https://github.com/ridwanishaq
+ * Text Domain:         wakatafizdomain
+ * Domain Path:         /languages
  * 
  */
 
