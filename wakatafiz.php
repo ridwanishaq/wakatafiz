@@ -4,7 +4,7 @@
  * Plugin Name:         WakataFiz
  * Plugin URI:          https://github.com/ridwanishaq/wakatafiz
  * Description:         A word count plugin for single post statistics.
- * Version:             1.0
+ * Version:             1.0.1
  * Requires at least:   5.3.1
  * Requires PHP:        7.4
  * License:             GPL v2 or later
@@ -80,12 +80,38 @@ class WakataFiz {
         );
         
         // Location Field
-        add_settings_field('wfiz_location', 'Display Location', array($this, 'locationHTML'), 'wfiz-word-count-settings-page', 'wfiz_first_section');
-        register_setting('wordcountplugin', 'wfiz_location', array('sanitize_callback' => array($this, 'sanitizeLocation'), 'default' => '0'));
+        add_settings_field(
+            'wfiz_location', 
+            'Display Location', 
+            array($this, 'locationHTML'), 
+            'wfiz-word-count-settings-page', 
+            'wfiz_first_section'
+        );
+        register_setting(
+            'wordcountplugin', 
+            'wfiz_location', 
+            array(
+                'sanitize_callback' => array($this, 'sanitizeLocation'), 
+                'default' => '0'
+            )
+        );
 
         // Headline Field
-        add_settings_field('wfiz_headline', 'Headline Text', array($this, 'headlineHTML'), 'wfiz-word-count-settings-page', 'wfiz_first_section');
-        register_setting('wordcountplugin', 'wfiz_headline', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'Post Statistic'));
+        add_settings_field(
+            'wfiz_headline', 
+            'Headline Text', 
+            array($this, 'headlineHTML'), 
+            'wfiz-word-count-settings-page', 
+            'wfiz_first_section'
+        );
+        register_setting(
+            'wordcountplugin', 
+            'wfiz_headline', 
+            array(
+                'sanitize_callback' => 'sanitize_text_field', 
+                'default' => 'Post Statistic'
+            )
+        );
 
         // Word Count
         add_settings_field('wfiz_wordcount', 'Word count', array($this, 'checkboxHTML'), 'wfiz-word-count-settings-page', 'wfiz_first_section', array('theName' => 'wfiz_wordcount'));
