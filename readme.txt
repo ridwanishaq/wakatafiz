@@ -18,6 +18,8 @@ Access comprehensive statistics on post word count, character count, and estimat
 conveniently from the settings page. Additionally, you have the option 
 to showcase supplementary statistics before/after each post.
 
+Features include:
+
 = Display statistics in the single blog post =
 * Aggregate word count across all blog posts.
 * Aggregate character count across all blog posts.
