@@ -30,8 +30,10 @@ to showcase supplementary statistics before/after each post.
 
 == Installation ==
 
-1. Copy the 'wakatafiz' directory to the '/wp-content/plugins/' directory.
-2. Activate the plugin by navigating to the 'Plugins' menu in WordPress.
+= Installing manually: =
+
+1. Unzip and copy the 'wakatafiz' directory to the '/wp-content/plugins/' directory.
+2. Activate the plugin by navigating to the 'Plugins' menu in WordPress admin dashboard.
 3. Customize the plugin settings as needed.
 
 == Frequently Asked Questions ==
