@@ -52,7 +52,7 @@ to showcase supplementary statistics before/after each post.
 * Cleared and follow the coding standard for version 1.0.0
 
 = 1.0.0 =
-*
+* First release of the very first version
 
 == Upgrade Notice ==
 
