@@ -21,10 +21,10 @@ class WakataFiz {
     
     public function __construct()
     {
-        add_action('admin_menu', array($this, 'wfiz_setting_link'));
-        add_action('admin_init', array($this, 'settings'));
-        add_filter('the_content', array($this, 'ifWrap'), 10, 1);
-        add_action('init', array($this, 'languages'));
+        add_action( 'admin_menu' , array( $this , 'wfiz_setting_link' ) );
+        add_action( 'admin_init' , array( $this , 'settings' ) );
+        add_filter( 'the_content' , array( $this , 'ifWrap' ), 10, 1 );
+        add_action( 'init', array( $this , 'languages' ) );
     }
 
     public function languages() {
