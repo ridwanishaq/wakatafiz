@@ -114,16 +114,61 @@ class WakataFiz {
         );
 
         // Word Count
-        add_settings_field('wfiz_wordcount', 'Word count', array($this, 'checkboxHTML'), 'wfiz-word-count-settings-page', 'wfiz_first_section', array('theName' => 'wfiz_wordcount'));
-        register_setting('wordcountplugin', 'wfiz_wordcount', array('sanitize_callback' => 'sanitize_text_field', 'default' => '1'));
+        add_settings_field(
+            'wfiz_wordcount', 
+            'Word count', 
+            array($this, 'checkboxHTML'), 
+            'wfiz-word-count-settings-page', 
+            'wfiz_first_section', 
+            array('theName' => 'wfiz_wordcount')
+        );
+        register_setting(
+            'wordcountplugin', 
+            'wfiz_wordcount', 
+            array(
+                'sanitize_callback' => 'sanitize_text_field', 
+                'default' => '1'
+            )
+        );
 
         // Character Count
-        add_settings_field('wfiz_charactercount', 'Character count', array($this, 'checkboxHTML'), 'wfiz-word-count-settings-page', 'wfiz_first_section', array('theName' => 'wfiz_charactercount'));
-        register_setting('wordcountplugin', 'wfiz_charactercount', array('sanitize_callback' => 'sanitize_text_field', 'default' => '1'));
+        add_settings_field(
+            'wfiz_charactercount', 
+            'Character count', array($this, 'checkboxHTML'), 
+            'wfiz-word-count-settings-page', 
+            'wfiz_first_section', 
+            array(
+                'theName' => 'wfiz_charactercount'
+            )
+        );
+        register_setting(
+            'wordcountplugin', 
+            'wfiz_charactercount', 
+            array(
+                'sanitize_callback' => 'sanitize_text_field', 
+                'default' => '1'
+            )
+        );
 
         // Read Time
-        add_settings_field('wfiz_readtime', 'Read time', array($this, 'checkboxHTML'), 'wfiz-word-count-settings-page', 'wfiz_first_section', array('theName' => 'wfiz_readtime'));
-        register_setting('wordcountplugin', 'wfiz_readtime', array('sanitize_callback' => 'sanitize_text_field', 'default' => '1'));
+        add_settings_field(
+            'wfiz_readtime', 
+            'Read time', 
+            array($this, 'checkboxHTML'), 
+            'wfiz-word-count-settings-page', 
+            'wfiz_first_section', 
+            array(
+                'theName' => 'wfiz_readtime'
+            )
+        );
+        register_setting(
+            'wordcountplugin', 
+            'wfiz_readtime', 
+            array(
+                'sanitize_callback' => 'sanitize_text_field', 
+                'default' => '1'
+            )
+        );
 
     }
 
