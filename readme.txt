@@ -50,6 +50,10 @@ Features include:
 
 == Changelog ==
 
+= 1.0.2 =
+* Improve code standard
+* Fix unamed bugs
+
 = 1.0.1 =
 * Improved plugins' header information
 * Refactored code standadization

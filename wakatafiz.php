@@ -4,7 +4,7 @@
  * Plugin Name:         WakataFiz
  * Plugin URI:          https://github.com/ridwanishaq/wakatafiz
  * Description:         A word count plugin for single post statistics.
- * Version:             1.0.1
+ * Version:             1.0.2
  * Requires at least:   5.3.1
  * Requires PHP:        7.4
  * License:             GPL v2 or later
@@ -200,10 +200,17 @@ class WakataFiz {
     <?php
     }
 
+    /**
+     * Link in which you can click from Settings sub menus
+     */
     public function wfiz_setting_link() {
         add_options_page('WakataFIZ Settings', esc_html__('Wakata FIZ', 'wakatafizdomain'),'manage_options','wfiz-word-count-settings-page', array($this, 'wfiz_settings_page_html'));
     }
     
+    /**
+     * Overall HTML Setting Page
+     * 
+     */
     public function wfiz_settings_page_html() {
     
         ?>
