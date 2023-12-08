@@ -54,6 +54,7 @@ Features include:
 * Improved plugins' header information
 * Refactored code standadization
 * Cleared and follow the coding standard for version 1.0.0
+* Tag release to v1.0.1
 
 = 1.0.0 =
 * First release of the very first version
